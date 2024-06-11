@@ -1,0 +1,12 @@
+name: Manual Workflow
+
+on:
+  workflow_dispatch: # Triggered manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
